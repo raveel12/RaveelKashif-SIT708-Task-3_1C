@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDAB3"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="3" />
+
+    <TextView
+        android:id="@+id/tvQuestionCount"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/_1_3" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="381dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="inherit"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <RadioGroup
+        android:id="@+id/rgOptions"
+        android:layout_width="373dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="@string/submit_" />
+</LinearLayout>
